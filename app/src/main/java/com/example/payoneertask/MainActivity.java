@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.payoneertask.Adapter.PaymentAdapter;
 import com.example.payoneertask.ViewModel.PaymentViewModel;
@@ -56,8 +57,12 @@ public class MainActivity extends AppCompatActivity {
         paymentViewModel.getIsLoading().observe(this, isLoading ->{
             if (isLoading)
                 pd.show();
-            else
+            else {
                 pd.dismiss();
+                paymentViewModel.getStringMessage().observe(this, stringMessage ->{
+                    Toast.makeText(getApplicationContext(),stringMessage, Toast.LENGTH_LONG).show();
+                });
+            }
         });
     }
 

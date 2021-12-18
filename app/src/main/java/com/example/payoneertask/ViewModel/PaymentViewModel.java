@@ -16,7 +16,8 @@ import java.util.List;
 public class PaymentViewModel extends ViewModel {
 
     private PaymentRepo paymentRepo;
-    LiveData<Boolean> isLoading;
+    private LiveData<Boolean> isLoading;
+    private LiveData<String> messageString;
     private MutableLiveData<List<ApplicableNetwork>> networksLiveData;
 
     public PaymentViewModel(){
@@ -33,6 +34,11 @@ public class PaymentViewModel extends ViewModel {
     public LiveData<Boolean> getIsLoading(){
         isLoading= paymentRepo.getIsLoading();
         return isLoading;
+    }
+
+    public LiveData<String> getStringMessage(){
+        messageString= paymentRepo.getMessageString();
+        return messageString;
     }
 
 }
