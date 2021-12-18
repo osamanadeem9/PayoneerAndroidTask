@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginCard">10dp</dimen>
+    <dimen name="paddingCard">10dp</dimen>
+    <dimen name="paymentSourceText">16sp</dimen>
+    <dimen name="paymentSourceLogo">50dp</dimen>
+    <dimen name="cardStroke">1dp</dimen>
+    <dimen name="marginRecyclerView">10dp</dimen>
+</resources>
