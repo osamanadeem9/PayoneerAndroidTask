@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/marginCard"
+    app:strokeColor="@color/creamWhite"
+    app:strokeWidth="@dimen/cardStroke"
+    android:id="@+id/cardPayment">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginCard"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/paymentLogo"
+            android:layout_width="@dimen/paymentSourceLogo"
+            android:layout_height="@dimen/paymentSourceLogo"/>
+
+        <TextView
+            android:id="@+id/paymentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginCard"
+            android:textColor="@color/black"
+            android:textSize="@dimen/paymentSourceText"
+            android:text=""
+            />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
