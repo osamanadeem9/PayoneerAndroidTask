@@ -8,4 +8,4 @@ The demo apk can also be download from this <a href="/demo.apk">link</a>.
   - Uses payoneer checkout SDK for model classes
   - Handling nextwork errors using Toasts/Logs.
   - Use of Retrofit, Recyclerview and Material libs.
-  - Implementation loosely based on MVVM architecture
+  - Implementation loosely based on MVVM architecture (didn't prefer to add data binding, since it was not mentioned in the TakeHome task.)
